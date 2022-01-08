@@ -33,40 +33,19 @@ public class MainActivity extends AppCompatActivity /*implements View.OnClickLis
     }
 
     public void buttonClicked(View view){
-        Intent intent = null;
         if(view.getId() == R.id.distanceBtn){
-            intent = new Intent(this, DistanceCoversionActivity.class);
+            Intent intent = new Intent(this, DistanceCoversionActivity.class);
+            startActivity(intent);
         } else if (view.getId() == R.id.volumeBtn){
-            intent = new Intent(this, VolumeConversionActivity.class);
+            Intent intent = new Intent(this, VolumeConversionActivity.class);
+            startActivity(intent);
         } else if (view.getId() == R.id.weightBtn){
-            intent = new Intent(this, WeightConversionActivity.class);
+            Intent intent = new Intent(this, WeightConversionActivity.class);
+            startActivity(intent);
         } else if (view.getId() == R.id.timeBtn){
-            intent = new Intent(this, TimeConversionActivity.class);
+            Intent intent = new Intent(this, TimeConversionActivity.class);
+            startActivity(intent);
         }
-        startActivity(intent);
+
     }
-
-    public void openActivity(View view) {
-
-
-        String message = editText.getText().toString();
-        intent.putExtra(EXTRA_MESSAGE, message);
-        startActivity(intent);
-    }
-
-//    @Override
-//    public void onClick(View v) {
-//        switch (v.getId()){
-//            case R.id.volumeBtn:
-//                break;
-//            case R.id.weightBtn:
-//                break;
-//            case R.id.distanceBtn:
-//                break;
-//            case R.id.timeBtn:
-//                break;
-//        }
-//        Intent intent = new Intent
-//    intent.putExtra(EXTRA_MESSAGE, message);
-//    }
 }
