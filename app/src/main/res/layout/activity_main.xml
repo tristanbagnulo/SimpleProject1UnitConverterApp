@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/title_unit_converter"
+        android:id="@+id/tvTitleUnitConverter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
@@ -30,7 +30,8 @@
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title_unit_converter" />
+        app:layout_constraintTop_toBottomOf="@+id/tvTitleUnitConverter"
+        android:onClick="buttonClicked" />
     <Button
         android:id="@+id/weightBtn"
         android:layout_width="wrap_content"
@@ -42,7 +43,7 @@
         android:text="Weight"
         android:textSize="25sp"
         android:textAllCaps="false"
-        />
+        android:onClick="buttonClicked" />
     <Button
         android:id="@+id/distanceBtn"
         android:layout_width="wrap_content"
@@ -54,6 +55,7 @@
         android:text="Distance"
         android:textSize="25sp"
         android:textAllCaps="false"
+        android:onClick="buttonClicked"
         />
     <Button
         android:id="@+id/timeBtn"
@@ -66,6 +68,7 @@
         android:text="Time"
         android:textSize="25sp"
         android:textAllCaps="false"
+        android:onClick="buttonClicked"
         />
 
 
