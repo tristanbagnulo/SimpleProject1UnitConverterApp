@@ -20,16 +20,12 @@ public class MainActivity extends AppCompatActivity /*implements View.OnClickLis
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //Declare and assign each of the widgets objects to their respective view ids.
         TextView tvTitleUnitConverter = findViewById(R.id.tvTitleUnitConverter);
         Button volumeBtn = (Button) findViewById(R.id.volumeBtn);
-        //volumeBtn.setOnClickListener(this);
         Button weightBtn = (Button) findViewById(R.id.volumeBtn);
-        //weightBtn.setOnClickListener(this);
         Button distanceBtn = (Button) findViewById(R.id.volumeBtn);
-        //distanceBtn.setOnClickListener(this);
         Button timeBtn = (Button) findViewById(R.id.volumeBtn);
-       //timeBtn.setOnClickListener(this);
-
     }
 
     public void buttonClicked(View view){
