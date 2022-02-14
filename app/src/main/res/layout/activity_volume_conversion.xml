@@ -40,7 +40,7 @@
 
 
     <TextView
-        android:id="@id/editTextSelectUnit"
+        android:id="@+id/textViewSelectUnit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignTop="@id/editTextTextPersonName"
@@ -58,17 +58,58 @@
 
     <Spinner
         android:id="@+id/spinner"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/editTextTextPersonName"
-        android:layout_alignBottom="@+id/editTextTextPersonName"
-        android:layout_marginStart="10dp"
+        style="@style/spinner_style"
+        android:layout_alignTop="@+id/textViewSelectUnit"
+        android:layout_alignBottom="@+id/textViewSelectUnit"
+        android:layout_marginStart="0dp"
         android:layout_marginLeft="0dp"
         android:layout_marginTop="0dp"
         android:layout_marginBottom="0dp"
+        android:layout_toEndOf="@+id/textViewSelectUnit"
+        android:layout_toRightOf="@+id/textViewSelectUnit" />
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_alignTop="@+id/textViewSelectUnit"
+        android:layout_alignBottom="@+id/textViewSelectUnit"
         android:layout_toEndOf="@+id/editTextSelectUnit"
         android:layout_toRightOf="@+id/editTextSelectUnit"
         app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName"
         app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName" />
+
+    <Button
+        android:id="@+id/buttonConvert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convert"
+        android:layout_below="@+id/editTextTextPersonName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:id="@+id/textViewOutputTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonConvert"
+        android:layout_alignStart="@+id/editTextTextPersonName"
+        android:layout_alignLeft="@+id/editTextTextPersonName"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="30dp"
+        android:text="Result:"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textViewOutPutPane"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewOutputTitle"
+        android:layout_alignStart="@+id/textViewOutputTitle"
+        android:layout_alignLeft="@+id/textViewOutputTitle"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="30dp"
+        android:text="<Populate Result>"
+        android:textSize="25sp"
+        android:textColor="@color/black"/>
 
 </RelativeLayout>
