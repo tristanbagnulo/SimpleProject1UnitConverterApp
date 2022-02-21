@@ -59,22 +59,16 @@
     <Spinner
         android:id="@+id/spinner"
         style="@style/spinner_style"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
         android:layout_alignTop="@+id/textViewSelectUnit"
         android:layout_alignBottom="@+id/textViewSelectUnit"
-        android:layout_marginStart="0dp"
-        android:layout_marginLeft="0dp"
-        android:layout_marginTop="0dp"
-        android:layout_marginBottom="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="-1dp"
         android:layout_toEndOf="@+id/textViewSelectUnit"
         android:layout_toRightOf="@+id/textViewSelectUnit" />
-        android:layout_width="10dp"
-        android:layout_height="10dp"
-        android:layout_alignTop="@+id/textViewSelectUnit"
-        android:layout_alignBottom="@+id/textViewSelectUnit"
-        android:layout_toEndOf="@+id/editTextSelectUnit"
-        android:layout_toRightOf="@+id/editTextSelectUnit"
-        app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName"
-        app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName" />
 
     <Button
         android:id="@+id/buttonConvert"

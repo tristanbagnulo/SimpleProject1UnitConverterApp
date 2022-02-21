@@ -13,8 +13,8 @@
             <padding android:bottom="3dp" android:left="3dp" android:right="3dp" android:top="3dp" />
         </shape>
         </item>
-        <!-- <item ><bitmap android:gravity="bottom|right" android:src="@drawable/spinner_arrow" />
-        </item> -->
+        <item ><bitmap android:gravity="bottom|right" android:src="@drawable/spinner_arrow.png" />
+        </item>
     </layer-list></item>
 
 </selector>
